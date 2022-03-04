@@ -1,5 +1,5 @@
 <h1 align="center">Things</h1>
-<p align="center">Small projects, bits of code, etc. that I come up with. Be prepared for dogwater code.</p>
+<p align="center">Small projects, bits of code, etc. that I come up with. Be prepared for terrible code.</p>
 
 <h2 align="center">Index</h2>
 
