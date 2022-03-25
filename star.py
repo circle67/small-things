@@ -8,11 +8,9 @@ min_radius = float(input("Minor radius: "))
 
 plot = input("Would you like the star plotted? (y/n) ") # plot or points
 if 'y' in plot:
-    plot = True
-elif 'n' in plot:
-    plot = False
+    makePlot = True
 else:
-    plot = False
+    makePlot = False
 
 turn = 0
 points = []
@@ -22,15 +20,15 @@ for x in range(poly):
     points.append([min_radius * cos(radians(turn)), min_radius * sin(radians(turn))])
     turn += point_turn
 
-if plot:
+if makePlot:
     points.append(points[0])
 
 xs, ys = zip(*points)
 
-if plot:
+if makePlot:
     plt.figure()
     plt.plot(xs, ys)
     plt.show()
 else:
     for x in points:
-        print("x: " + str(x[0]) + "\ty: " + str(x[1]))
+        print("(" + str(x[0]) + ", " + str(x[1]) + ")")
